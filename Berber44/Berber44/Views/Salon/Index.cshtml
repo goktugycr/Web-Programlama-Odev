@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Berber44.Models.Salon>
+
+@{
+    ViewData["Title"] = "Salonlar";
+}
+
+<h1>Salonlar</h1>
+
+<p>
+    <a class="btn btn-primary" asp-action="Create">Yeni Salon Ekle</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Ad</th>
+            <th>Tür</th>
+            <th>Çalışma Saatleri</th>
+            <th>İşlemler</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Ad</td>
+                <td>@item.Tur</td>
+                <td>@item.CalismaSaatleri</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning">Düzenle</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Sil</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
