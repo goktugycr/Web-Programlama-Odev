@@ -1,62 +1,66 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\goktu\\source\\repos\\Berber44\\",
+  "WorkspaceRootPath": "C:\\Users\\goktu\\Documents\\GitHub\\Web-Programlama-Odev\\Berber44\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|c:\\users\\goktu\\source\\repos\\berber44\\berber44\\views\\salon\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|solutionrelative:berber44\\views\\salon\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|c:\\users\\goktu\\source\\repos\\berber44\\berber44\\views\\salon\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|solutionrelative:berber44\\views\\salon\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|c:\\users\\goktu\\source\\repos\\berber44\\berber44\\controllers\\saloncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|c:\\users\\goktu\\documents\\github\\web-programlama-odev\\berber44\\berber44\\controllers\\saloncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|solutionrelative:berber44\\controllers\\saloncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|c:\\users\\goktu\\source\\repos\\berber44\\berber44\\models\\islem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|solutionrelative:berber44\\models\\islem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|c:\\users\\goktu\\source\\repos\\berber44\\berber44\\models\\calisan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|solutionrelative:berber44\\models\\calisan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|c:\\users\\goktu\\source\\repos\\berber44\\berber44\\models\\randevu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|solutionrelative:berber44\\models\\randevu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|c:\\users\\goktu\\source\\repos\\berber44\\berber44\\models\\calisanislem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|solutionrelative:berber44\\models\\calisanislem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|c:\\users\\goktu\\source\\repos\\berber44\\berber44\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|c:\\users\\goktu\\documents\\github\\web-programlama-odev\\berber44\\berber44\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|solutionrelative:berber44\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|c:\\users\\goktu\\source\\repos\\berber44\\berber44\\views\\salon\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|solutionrelative:berber44\\views\\salon\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|c:\\users\\goktu\\documents\\github\\web-programlama-odev\\berber44\\berber44\\views\\salon\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|solutionrelative:berber44\\views\\salon\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|c:\\users\\goktu\\source\\repos\\berber44\\berber44\\views\\salon\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|c:\\users\\goktu\\documents\\github\\web-programlama-odev\\berber44\\berber44\\views\\salon\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|solutionrelative:berber44\\views\\salon\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|c:\\users\\goktu\\documents\\github\\web-programlama-odev\\berber44\\berber44\\views\\salon\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|solutionrelative:berber44\\views\\salon\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|c:\\users\\goktu\\source\\repos\\berber44\\berber44\\models\\salon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|c:\\users\\goktu\\documents\\github\\web-programlama-odev\\berber44\\berber44\\models\\salon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|solutionrelative:berber44\\models\\salon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|c:\\users\\goktu\\source\\repos\\berber44\\berber44\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|solutionrelative:berber44\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|c:\\users\\goktu\\documents\\github\\web-programlama-odev\\berber44\\berber44\\views\\salon\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|solutionrelative:berber44\\views\\salon\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|c:\\users\\goktu\\source\\repos\\berber44\\berber44\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|c:\\users\\goktu\\documents\\github\\web-programlama-odev\\berber44\\berber44\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|solutionrelative:berber44\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|c:\\users\\goktu\\documents\\github\\web-programlama-odev\\berber44\\berber44\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|solutionrelative:berber44\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|c:\\users\\goktu\\source\\repos\\berber44\\berber44\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|solutionrelative:berber44\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|c:\\users\\goktu\\documents\\github\\web-programlama-odev\\berber44\\berber44\\models\\islem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|solutionrelative:berber44\\models\\islem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|c:\\users\\goktu\\documents\\github\\web-programlama-odev\\berber44\\berber44\\models\\calisan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|solutionrelative:berber44\\models\\calisan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|c:\\users\\goktu\\documents\\github\\web-programlama-odev\\berber44\\berber44\\models\\randevu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|solutionrelative:berber44\\models\\randevu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|c:\\users\\goktu\\documents\\github\\web-programlama-odev\\berber44\\berber44\\models\\calisanislem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|solutionrelative:berber44\\models\\calisanislem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|c:\\users\\goktu\\documents\\github\\web-programlama-odev\\berber44\\berber44\\views\\salon\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|solutionrelative:berber44\\views\\salon\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|c:\\users\\goktu\\documents\\github\\web-programlama-odev\\berber44\\berber44\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48E9FAC4-10F5-49EA-A8D1-2084302F2006}|Berber44\\Berber44.csproj|solutionrelative:berber44\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,41 +70,51 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\goktu\\Documents\\GitHub\\Web-Programlama-Odev\\Berber44\\Berber44\\Views\\Salon\\Details.cshtml",
+              "RelativeDocumentMoniker": "Berber44\\Views\\Salon\\Details.cshtml",
+              "ToolTip": "C:\\Users\\goktu\\Documents\\GitHub\\Web-Programlama-Odev\\Berber44\\Berber44\\Views\\Salon\\Details.cshtml",
+              "RelativeToolTip": "Berber44\\Views\\Salon\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-02T12:47:03.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\goktu\\source\\repos\\Berber44\\Berber44\\Views\\Salon\\Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\goktu\\Documents\\GitHub\\Web-Programlama-Odev\\Berber44\\Berber44\\Views\\Salon\\Edit.cshtml",
               "RelativeDocumentMoniker": "Berber44\\Views\\Salon\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\goktu\\source\\repos\\Berber44\\Berber44\\Views\\Salon\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\goktu\\Documents\\GitHub\\Web-Programlama-Odev\\Berber44\\Berber44\\Views\\Salon\\Edit.cshtml",
               "RelativeToolTip": "Berber44\\Views\\Salon\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAowB0AAABPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-01T11:26:38.463Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-01T11:26:38.463Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\goktu\\source\\repos\\Berber44\\Berber44\\Views\\Salon\\Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\goktu\\Documents\\GitHub\\Web-Programlama-Odev\\Berber44\\Berber44\\Views\\Salon\\Delete.cshtml",
               "RelativeDocumentMoniker": "Berber44\\Views\\Salon\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\goktu\\source\\repos\\Berber44\\Berber44\\Views\\Salon\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\goktu\\Documents\\GitHub\\Web-Programlama-Odev\\Berber44\\Berber44\\Views\\Salon\\Delete.cshtml",
               "RelativeToolTip": "Berber44\\Views\\Salon\\Delete.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-01T11:01:54.16Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-01T11:01:54.16Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 7,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\goktu\\source\\repos\\Berber44\\Berber44\\Views\\Home\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\goktu\\Documents\\GitHub\\Web-Programlama-Odev\\Berber44\\Berber44\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Berber44\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\goktu\\source\\repos\\Berber44\\Berber44\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\goktu\\Documents\\GitHub\\Web-Programlama-Odev\\Berber44\\Berber44\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Berber44\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -108,35 +122,35 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 8,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\goktu\\source\\repos\\Berber44\\Berber44\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\goktu\\Documents\\GitHub\\Web-Programlama-Odev\\Berber44\\Berber44\\appsettings.json",
               "RelativeDocumentMoniker": "Berber44\\appsettings.json",
-              "ToolTip": "C:\\Users\\goktu\\source\\repos\\Berber44\\Berber44\\appsettings.json",
+              "ToolTip": "C:\\Users\\goktu\\Documents\\GitHub\\Web-Programlama-Odev\\Berber44\\Berber44\\appsettings.json",
               "RelativeToolTip": "Berber44\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-11-30T18:03:51.096Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\goktu\\source\\repos\\Berber44\\Berber44\\Views\\Salon\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\goktu\\Documents\\GitHub\\Web-Programlama-Odev\\Berber44\\Berber44\\Views\\Salon\\Index.cshtml",
               "RelativeDocumentMoniker": "Berber44\\Views\\Salon\\Index.cshtml",
-              "ToolTip": "C:\\Users\\goktu\\source\\repos\\Berber44\\Berber44\\Views\\Salon\\Index.cshtml",
+              "ToolTip": "C:\\Users\\goktu\\Documents\\GitHub\\Web-Programlama-Odev\\Berber44\\Berber44\\Views\\Salon\\Index.cshtml",
               "RelativeToolTip": "Berber44\\Views\\Salon\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACEAAABmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-30T17:07:17.822Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\goktu\\source\\repos\\Berber44\\Berber44\\Views\\Salon\\Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\goktu\\Documents\\GitHub\\Web-Programlama-Odev\\Berber44\\Berber44\\Views\\Salon\\Create.cshtml",
               "RelativeDocumentMoniker": "Berber44\\Views\\Salon\\Create.cshtml",
-              "ToolTip": "C:\\Users\\goktu\\source\\repos\\Berber44\\Berber44\\Views\\Salon\\Create.cshtml",
+              "ToolTip": "C:\\Users\\goktu\\Documents\\GitHub\\Web-Programlama-Odev\\Berber44\\Berber44\\Views\\Salon\\Create.cshtml",
               "RelativeToolTip": "Berber44\\Views\\Salon\\Create.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -144,36 +158,36 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\goktu\\source\\repos\\Berber44\\Berber44\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\goktu\\Documents\\GitHub\\Web-Programlama-Odev\\Berber44\\Berber44\\Program.cs",
               "RelativeDocumentMoniker": "Berber44\\Program.cs",
-              "ToolTip": "C:\\Users\\goktu\\source\\repos\\Berber44\\Berber44\\Program.cs",
+              "ToolTip": "C:\\Users\\goktu\\Documents\\GitHub\\Web-Programlama-Odev\\Berber44\\Berber44\\Program.cs",
               "RelativeToolTip": "Berber44\\Program.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAgAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-30T16:58:00.1Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "SalonController.cs",
-              "DocumentMoniker": "C:\\Users\\goktu\\source\\repos\\Berber44\\Berber44\\Controllers\\SalonController.cs",
+              "DocumentMoniker": "C:\\Users\\goktu\\Documents\\GitHub\\Web-Programlama-Odev\\Berber44\\Berber44\\Controllers\\SalonController.cs",
               "RelativeDocumentMoniker": "Berber44\\Controllers\\SalonController.cs",
-              "ToolTip": "C:\\Users\\goktu\\source\\repos\\Berber44\\Berber44\\Controllers\\SalonController.cs",
+              "ToolTip": "C:\\Users\\goktu\\Documents\\GitHub\\Web-Programlama-Odev\\Berber44\\Berber44\\Controllers\\SalonController.cs",
               "RelativeToolTip": "Berber44\\Controllers\\SalonController.cs",
-              "ViewState": "AgIAAGcAAAAAAAAAAAAqwG8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAAAI0AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-30T16:55:40.663Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "CalisanIslem.cs",
-              "DocumentMoniker": "C:\\Users\\goktu\\source\\repos\\Berber44\\Berber44\\Models\\CalisanIslem.cs",
+              "DocumentMoniker": "C:\\Users\\goktu\\Documents\\GitHub\\Web-Programlama-Odev\\Berber44\\Berber44\\Models\\CalisanIslem.cs",
               "RelativeDocumentMoniker": "Berber44\\Models\\CalisanIslem.cs",
-              "ToolTip": "C:\\Users\\goktu\\source\\repos\\Berber44\\Berber44\\Models\\CalisanIslem.cs",
+              "ToolTip": "C:\\Users\\goktu\\Documents\\GitHub\\Web-Programlama-Odev\\Berber44\\Berber44\\Models\\CalisanIslem.cs",
               "RelativeToolTip": "Berber44\\Models\\CalisanIslem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -181,11 +195,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "Randevu.cs",
-              "DocumentMoniker": "C:\\Users\\goktu\\source\\repos\\Berber44\\Berber44\\Models\\Randevu.cs",
+              "DocumentMoniker": "C:\\Users\\goktu\\Documents\\GitHub\\Web-Programlama-Odev\\Berber44\\Berber44\\Models\\Randevu.cs",
               "RelativeDocumentMoniker": "Berber44\\Models\\Randevu.cs",
-              "ToolTip": "C:\\Users\\goktu\\source\\repos\\Berber44\\Berber44\\Models\\Randevu.cs",
+              "ToolTip": "C:\\Users\\goktu\\Documents\\GitHub\\Web-Programlama-Odev\\Berber44\\Berber44\\Models\\Randevu.cs",
               "RelativeToolTip": "Berber44\\Models\\Randevu.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -193,11 +207,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "Calisan.cs",
-              "DocumentMoniker": "C:\\Users\\goktu\\source\\repos\\Berber44\\Berber44\\Models\\Calisan.cs",
+              "DocumentMoniker": "C:\\Users\\goktu\\Documents\\GitHub\\Web-Programlama-Odev\\Berber44\\Berber44\\Models\\Calisan.cs",
               "RelativeDocumentMoniker": "Berber44\\Models\\Calisan.cs",
-              "ToolTip": "C:\\Users\\goktu\\source\\repos\\Berber44\\Berber44\\Models\\Calisan.cs",
+              "ToolTip": "C:\\Users\\goktu\\Documents\\GitHub\\Web-Programlama-Odev\\Berber44\\Berber44\\Models\\Calisan.cs",
               "RelativeToolTip": "Berber44\\Models\\Calisan.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -205,24 +219,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "Islem.cs",
-              "DocumentMoniker": "C:\\Users\\goktu\\source\\repos\\Berber44\\Berber44\\Models\\Islem.cs",
+              "DocumentMoniker": "C:\\Users\\goktu\\Documents\\GitHub\\Web-Programlama-Odev\\Berber44\\Berber44\\Models\\Islem.cs",
               "RelativeDocumentMoniker": "Berber44\\Models\\Islem.cs",
-              "ToolTip": "C:\\Users\\goktu\\source\\repos\\Berber44\\Berber44\\Models\\Islem.cs",
+              "ToolTip": "C:\\Users\\goktu\\Documents\\GitHub\\Web-Programlama-Odev\\Berber44\\Berber44\\Models\\Islem.cs",
               "RelativeToolTip": "Berber44\\Models\\Islem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T16:48:47.305Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-30T16:48:47.305Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 5,
               "Title": "Salon.cs",
-              "DocumentMoniker": "C:\\Users\\goktu\\source\\repos\\Berber44\\Berber44\\Models\\Salon.cs",
+              "DocumentMoniker": "C:\\Users\\goktu\\Documents\\GitHub\\Web-Programlama-Odev\\Berber44\\Berber44\\Models\\Salon.cs",
               "RelativeDocumentMoniker": "Berber44\\Models\\Salon.cs",
-              "ToolTip": "C:\\Users\\goktu\\source\\repos\\Berber44\\Berber44\\Models\\Salon.cs",
+              "ToolTip": "C:\\Users\\goktu\\Documents\\GitHub\\Web-Programlama-Odev\\Berber44\\Berber44\\Models\\Salon.cs",
               "RelativeToolTip": "Berber44\\Models\\Salon.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -230,11 +243,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\goktu\\source\\repos\\Berber44\\Berber44\\Data\\ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\goktu\\Documents\\GitHub\\Web-Programlama-Odev\\Berber44\\Berber44\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Berber44\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\goktu\\source\\repos\\Berber44\\Berber44\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\goktu\\Documents\\GitHub\\Web-Programlama-Odev\\Berber44\\Berber44\\Data\\ApplicationDbContext.cs",
               "RelativeToolTip": "Berber44\\Data\\ApplicationDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

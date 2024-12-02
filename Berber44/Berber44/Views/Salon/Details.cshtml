@@ -1,0 +1,27 @@
+﻿@model Berber44.Models.Salon
+
+@{
+    ViewData["Title"] = "Salon Details";
+}
+
+<h1>Salon Details</h1>
+
+<div>
+    <h4>Salon</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">Ad</dt>
+        <dd class="col-sm-10">@Model.Ad</dd>
+
+        <dt class="col-sm-2">Tür</dt>
+        <dd class="col-sm-10">@Model.Tur</dd>
+
+        <dt class="col-sm-2">Çalışma Saatleri</dt>
+        <dd class="col-sm-10">@Model.CalismaSaatleri</dd>
+    </dl>
+</div>
+
+<div>
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</div>
+

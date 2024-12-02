@@ -127,6 +127,24 @@ namespace Berber44.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        // GET: Salon/Details/5
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null || _context.Salonlar == null)
+            {
+                return NotFound();
+            }
+
+            var salon = await _context.Salonlar
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (salon == null)
+            {
+                return NotFound();
+            }
+
+            return View(salon);
+        }
+
         private bool SalonExists(int id)
         {
             return _context.Salonlar.Any(e => e.Id == id);
