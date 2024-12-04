@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "byjLi+LnikU=",
+  "dgSpecHash": "MYJq/AE6V3U=",
   "success": true,
-  "projectFilePath": "C:\\Users\\goktu\\Documents\\GitHub\\Web-Programlama-Odev\\Berber44\\Berber44\\Berber44.csproj",
+  "projectFilePath": "C:\\Users\\goktu\\source\\repos\\Berber44\\Berber44\\Berber44.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\goktu\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\goktu\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

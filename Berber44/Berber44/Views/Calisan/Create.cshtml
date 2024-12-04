@@ -1,0 +1,30 @@
+﻿@model Berber44.Models.Calisan
+
+@{
+    ViewData["Title"] = "Yeni Çalışan Ekle";
+}
+
+<h1>Yeni Çalışan Ekle</h1>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label for="Ad">Ad</label>
+        <input type="text" class="form-control" id="Ad" name="Ad" required />
+    </div>
+    <div class="form-group">
+        <label for="Soyad">Soyad</label>
+        <input type="text" class="form-control" id="Soyad" name="Soyad" required />
+    </div>
+
+    <div class="form-group">
+        <label for="SalonId">Salon</label>
+        <select class="form-control" id="SalonId" name="SalonId" required>
+            <option value="">--Salon Seçin--</option>
+            @foreach (var salon in (IEnumerable<Berber44.Models.Salon>)ViewBag.Salonlar)
+            {
+                <option value="@salon.Id">@salon.Ad</option>
+            }
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+</form>
