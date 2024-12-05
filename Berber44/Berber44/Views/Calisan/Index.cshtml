@@ -16,6 +16,7 @@
             <th>#</th>
             <th>Ad</th>
             <th>Soyad</th>
+            <th>Uzmanlık Alanı</th> <!-- Add this -->
             <th>Salon</th>
             <th>İşlemler</th>
         </tr>
@@ -27,7 +28,8 @@
                 <td>@item.Id</td>
                 <td>@item.Ad</td>
                 <td>@item.Soyad</td>
-                <td>@item.Salon?.Ad</td> <!-- Hangi salonda çalıştığını gösterir -->
+                <td>@item.UzmanlikAlanlari</td> <!-- Add this -->
+                <td>@item.Salon?.Ad</td>
                 <td>
                     <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning">Düzenle</a>
                     <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Sil</a>
@@ -36,3 +38,4 @@
         }
     </tbody>
 </table>
+

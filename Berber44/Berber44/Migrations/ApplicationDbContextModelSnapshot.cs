@@ -31,16 +31,18 @@ namespace Berber44.Migrations
 
                     b.Property<string>("Ad")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("SalonId")
                         .HasColumnType("int");
 
                     b.Property<string>("Soyad")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UzmanlikAlanlari")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -77,12 +79,17 @@ namespace Berber44.Migrations
             modelBuilder.Entity("Berber44.Models.Calisan", b =>
                 {
                     b.HasOne("Berber44.Models.Salon", "Salon")
-                        .WithMany()
+                        .WithMany("Calisanlar")
                         .HasForeignKey("SalonId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Salon");
+                });
+
+            modelBuilder.Entity("Berber44.Models.Salon", b =>
+                {
+                    b.Navigation("Calisanlar");
                 });
 #pragma warning restore 612, 618
         }

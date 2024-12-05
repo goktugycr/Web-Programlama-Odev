@@ -1,30 +1,34 @@
 ﻿@model Berber44.Models.Calisan
 
-@{
-    ViewData["Title"] = "Yeni Çalışan Ekle";
-}
-
-<h1>Yeni Çalışan Ekle</h1>
+<h2>Yeni Çalışan Ekle</h2>
 
 <form asp-action="Create" method="post">
     <div class="form-group">
-        <label for="Ad">Ad</label>
-        <input type="text" class="form-control" id="Ad" name="Ad" required />
-    </div>
-    <div class="form-group">
-        <label for="Soyad">Soyad</label>
-        <input type="text" class="form-control" id="Soyad" name="Soyad" required />
+        <label asp-for="Ad"></label>
+        <input asp-for="Ad" class="form-control" />
+        <span asp-validation-for="Ad" class="text-danger"></span>
     </div>
 
     <div class="form-group">
-        <label for="SalonId">Salon</label>
-        <select class="form-control" id="SalonId" name="SalonId" required>
-            <option value="">--Salon Seçin--</option>
-            @foreach (var salon in (IEnumerable<Berber44.Models.Salon>)ViewBag.Salonlar)
-            {
-                <option value="@salon.Id">@salon.Ad</option>
-            }
-        </select>
+        <label asp-for="Soyad"></label>
+        <input asp-for="Soyad" class="form-control" />
+        <span asp-validation-for="Soyad" class="text-danger"></span>
     </div>
+
+    <div class="form-group">
+        <label asp-for="UzmanlikAlanlari">Uzmanlık Alanları</label>
+        <input asp-for="UzmanlikAlanlari" class="form-control" />
+        <span asp-validation-for="UzmanlikAlanlari" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="SalonId">Salon</label>
+        <select asp-for="SalonId" asp-items="ViewBag.Salonlar" class="form-control">
+            <option value="">--Salon Seçin--</option>
+        </select>
+        <span asp-validation-for="SalonId" class="text-danger"></span>
+    </div>
+
     <button type="submit" class="btn btn-primary">Kaydet</button>
+    <a asp-action="Index" class="btn btn-secondary">Geri</a>
 </form>

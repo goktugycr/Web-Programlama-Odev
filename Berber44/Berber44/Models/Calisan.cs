@@ -1,25 +1,17 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Berber44.Models;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Berber44.Models
 {
     public class Calisan
     {
-        [Key]
         public int Id { get; set; }
-
-        [Required]
-        [StringLength(100)]
-        public string Ad { get; set; }
-
-        [Required]
-        [StringLength(100)]
-        public string Soyad { get; set; }
-
-        [Required]
-        [ForeignKey("Salon")]
-        public int SalonId { get; set; } // Hangi salonda çalıştığını tutar
-
-        public Salon Salon { get; set; } // İlgili salon bilgisi
+        public string Ad { get; set; } = string.Empty;
+        public string Soyad { get; set; } = string.Empty;
+        public string UzmanlikAlanlari { get; set; } = string.Empty;
+        public int SalonId { get; set; }
+        public Salon? Salon { get; set; }
     }
+
 }

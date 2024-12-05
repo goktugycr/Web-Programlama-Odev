@@ -1,6 +1,7 @@
 ﻿using Berber44.Data;
 using Berber44.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
 namespace Berber44.Controllers
@@ -17,7 +18,10 @@ namespace Berber44.Controllers
         // GET: Calisan
         public async Task<IActionResult> Index()
         {
-            var calisanlar = await _context.Calisanlar.ToListAsync();
+            // Include related Salon information
+            var calisanlar = await _context.Calisanlar
+                                           .Include(c => c.Salon)
+                                           .ToListAsync();
             return View(calisanlar);
         }
 
@@ -26,50 +30,45 @@ namespace Berber44.Controllers
         {
             var salonlar = _context.Salonlar.ToList();
 
+            // If no salons exist, inform the user
             if (!salonlar.Any())
             {
                 TempData["ErrorMessage"] = "Önce bir salon eklemeniz gerekiyor.";
-                return RedirectToAction("Index", "Salonlar");
+                return RedirectToAction("Index", "Salon");
             }
 
-            ViewBag.Salonlar = salonlar;
+            // Populate dropdown for Salons
+            ViewBag.Salonlar = new SelectList(salonlar, "Id", "Ad");
             return View();
         }
 
+        // POST: Calisan/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Calisan calisan)
         {
-            Console.WriteLine("Create POST method invoked.");
-
             if (ModelState.IsValid)
             {
-                Console.WriteLine("ModelState is valid.");
                 _context.Calisanlar.Add(calisan);
                 await _context.SaveChangesAsync();
-                Console.WriteLine("Calisan added to the database.");
                 return RedirectToAction(nameof(Index));
             }
 
-            Console.WriteLine("ModelState is invalid.");
-            ViewBag.Salonlar = _context.Salonlar.ToList();
+            // Repopulate dropdown in case of validation failure
+            ViewBag.Salonlar = new SelectList(_context.Salonlar, "Id", "Ad", calisan.SalonId);
             return View(calisan);
         }
-
 
         // GET: Calisan/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null || _context.Calisanlar == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
 
             var calisan = await _context.Calisanlar.FindAsync(id);
-            if (calisan == null)
-            {
-                return NotFound();
-            }
+            if (calisan == null) return NotFound();
+
+            // Populate dropdown with the selected Salon
+            ViewBag.Salonlar = new SelectList(_context.Salonlar, "Id", "Ad", calisan.SalonId);
             return View(calisan);
         }
 
@@ -78,10 +77,7 @@ namespace Berber44.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, Calisan calisan)
         {
-            if (id != calisan.Id)
-            {
-                return NotFound();
-            }
+            if (id != calisan.Id) return NotFound();
 
             if (ModelState.IsValid)
             {
@@ -89,43 +85,36 @@ namespace Berber44.Controllers
                 {
                     _context.Update(calisan);
                     await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!_context.Calisanlar.Any(e => e.Id == calisan.Id))
-                    {
+                    if (!_context.Calisanlar.Any(e => e.Id == id))
                         return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
+                    throw;
                 }
-                return RedirectToAction(nameof(Index));
             }
+
+            // Repopulate dropdown in case of validation failure
+            ViewBag.Salonlar = new SelectList(_context.Salonlar, "Id", "Ad", calisan.SalonId);
             return View(calisan);
         }
 
         // GET: Calisan/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null || _context.Calisanlar == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
 
             var calisan = await _context.Calisanlar
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (calisan == null)
-            {
-                return NotFound();
-            }
+                                        .Include(c => c.Salon)
+                                        .FirstOrDefaultAsync(m => m.Id == id);
+            if (calisan == null) return NotFound();
 
             return View(calisan);
         }
 
         // POST: Calisan/Delete/5
-        [HttpPost, ActionName("Delete")]
+        [HttpPost, ActionName("DeleteConfirmed")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
@@ -133,9 +122,8 @@ namespace Berber44.Controllers
             if (calisan != null)
             {
                 _context.Calisanlar.Remove(calisan);
+                await _context.SaveChangesAsync();
             }
-
-            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
     }

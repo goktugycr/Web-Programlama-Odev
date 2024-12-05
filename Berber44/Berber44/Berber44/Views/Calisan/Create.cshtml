@@ -1,0 +1,34 @@
+﻿@model Berber44.Models.Calisan
+
+<h2>Yeni Çalışan Ekle</h2>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="Ad"></label>
+        <input asp-for="Ad" class="form-control" />
+        <span asp-validation-for="Ad" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Soyad"></label>
+        <input asp-for="Soyad" class="form-control" />
+        <span asp-validation-for="Soyad" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="UzmanlikAlanlari">Uzmanlık Alanları</label>
+        <input asp-for="UzmanlikAlanlari" class="form-control" />
+        <span asp-validation-for="UzmanlikAlanlari" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="SalonId">Salon</label>
+        <select asp-for="SalonId" asp-items="ViewBag.Salonlar" class="form-control">
+            <option value="">--Salon Seçin--</option>
+        </select>
+        <span asp-validation-for="SalonId" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+    <a asp-action="Index" class="btn btn-secondary">Geri</a>
+</form>

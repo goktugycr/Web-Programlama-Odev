@@ -1,21 +1,18 @@
-﻿// Models/Salon.cs
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-
+﻿using System.ComponentModel.DataAnnotations;
 namespace Berber44.Models
 {
     public class Salon
     {
-        [Key]
         public int Id { get; set; }
+        public string Ad { get; set; } = string.Empty;
 
-        [Required]
-        public string Ad { get; set; }
+        // Yeni özellikler
+        public string Tur { get; set; } = string.Empty; // Bay/Bayan
+        public string CalismaSaatleri { get; set; } = string.Empty; // Çalışma saatleri
 
-        [Required]
-        public string Tur { get; set; } // Kuaför veya Berber
+        // İlişkiler
+        public ICollection<Calisan> Calisanlar { get; set; } = new List<Calisan>();
 
-        public string CalismaSaatleri { get; set; }
     }
 }
 
