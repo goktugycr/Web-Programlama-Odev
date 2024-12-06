@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\goktu\\Desktop\\Berber44\\Berber44\\Berber44.csproj": {}
+    "C:\\Users\\goktu\\source\\repos\\Berber44\\Berber44\\Berber44.csproj": {}
   },
   "projects": {
-    "C:\\Users\\goktu\\Desktop\\Berber44\\Berber44\\Berber44.csproj": {
+    "C:\\Users\\goktu\\source\\repos\\Berber44\\Berber44\\Berber44.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\goktu\\Desktop\\Berber44\\Berber44\\Berber44.csproj",
+        "projectUniqueName": "C:\\Users\\goktu\\source\\repos\\Berber44\\Berber44\\Berber44.csproj",
         "projectName": "Berber44",
-        "projectPath": "C:\\Users\\goktu\\Desktop\\Berber44\\Berber44\\Berber44.csproj",
+        "projectPath": "C:\\Users\\goktu\\source\\repos\\Berber44\\Berber44\\Berber44.csproj",
         "packagesPath": "C:\\Users\\goktu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\goktu\\Desktop\\Berber44\\Berber44\\obj\\",
+        "outputPath": "C:\\Users\\goktu\\source\\repos\\Berber44\\Berber44\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
