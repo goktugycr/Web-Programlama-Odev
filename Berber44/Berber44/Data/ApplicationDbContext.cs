@@ -9,6 +9,7 @@ namespace Berber44.Data
 
         public DbSet<Salon> Salonlar { get; set; } = null!;
         public DbSet<Calisan> Calisanlar { get; set; } = null!;
+        public DbSet<Islem> Islemler { get; set; } = null!;
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

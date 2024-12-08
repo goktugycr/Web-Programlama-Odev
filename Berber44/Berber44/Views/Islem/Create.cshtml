@@ -1,0 +1,29 @@
+﻿@model Berber44.Models.Islem
+
+<h1>Yeni İşlem Ekle</h1>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="Ad"></label>
+        <input asp-for="Ad" class="form-control" />
+        <span asp-validation-for="Ad" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Sure"></label>
+        <input asp-for="Sure" class="form-control" />
+        <span asp-validation-for="Sure" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Ucret"></label>
+        <input asp-for="Ucret" class="form-control" />
+        <span asp-validation-for="Ucret" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="SalonId">Salon</label>
+        <select asp-for="SalonId" asp-items="ViewBag.Salonlar" class="form-control">
+            <option value="">-- Salon Seç --</option>
+        </select>
+        <span asp-validation-for="SalonId" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+</form>
