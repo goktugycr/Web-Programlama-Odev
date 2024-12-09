@@ -1,0 +1,40 @@
+﻿@model Berber44.Models.Islem
+
+<h1>İşlem Sil</h1>
+
+<h3>Bu işlemi silmek istediğinize emin misiniz?</h3>
+<div>
+    <h4>İşlem Detayları:</h4>
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Ad)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Ad)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Sure)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Sure) dakika
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Ucret)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Ucret) TL
+        </dd>
+        @* Eğer salon ilişkisi varsa salon adı gösterilebilir *@
+        @if (Model.Salon != null)
+        {
+            <dt class="col-sm-2">Salon</dt>
+            <dd class="col-sm-10">@Model.Salon.Ad</dd>
+        }
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" class="btn btn-danger">Sil</button>
+        <a asp-action="Index" class="btn btn-secondary">İptal</a>
+    </form>
+</div>
