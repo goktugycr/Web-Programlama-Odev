@@ -6,7 +6,7 @@ namespace Berber44.Models
 {
     public class Islem
     {
-
+       
         public int Id { get; set; }
 
         public string Ad { get; set; } = string.Empty;
@@ -18,8 +18,9 @@ namespace Berber44.Models
         // Foreign key for Salon
         public int SalonId { get; set; }
 
-        public Salon? Salon { get; set; }
+        public Salon? Salon { get; set; } 
         // Navigation property for the related Randevular
+        public List<Randevu> Randevular { get; set; } = new List<Randevu>();
     }
 }
 

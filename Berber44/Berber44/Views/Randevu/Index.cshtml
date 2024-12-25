@@ -1,0 +1,67 @@
+﻿@model IEnumerable<Berber44.Models.Randevu>
+
+
+
+<div class="mt-5 text-center">
+    <a href="@Url.Action("Index", "Salon")" class="btn btn-sm btn-primary mx-2">Salon Yönetimi</a>
+    <a href="@Url.Action("Index", "Calisan")" class="btn btn-sm btn-secondary mx-2">Çalışan Yönetimi</a>
+    <a href="@Url.Action("Index", "Islem")" class="btn btn-sm btn-info mx-2 text-white">İşlem Yönetimi</a>
+    <a href="@Url.Action("UserList", "Admin")" class="btn btn-sm btn-warning mx-2">Kullanıcı Yönetimi</a>
+    <a href="@Url.Action("RandevuYonetimi", "Admin")" class="btn btn-sm btn-warning mx-2">Randevu Api Yönetimi</a>
+
+</div>
+<h1>Randevu Listesi</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Yeni Randevu Ekle</a>
+</p>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Çalışan</th>
+            <th>İşlem</th>
+            <th>Tarih ve Saat</th>
+            <th>Ücret</th>
+            <th>Onay Durumu</th>
+           
+           
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var randevu in Model)
+        {
+            <tr>
+                <td>@randevu.Id</td>
+                <td>@randevu.Calisan?.Ad</td>
+                <td>@randevu.Islem?.Ad</td>
+                <td>@randevu.TarihSaat.ToString("dd.MM.yyyy HH:mm")</td>
+                <td>@(randevu.Ucret?.ToString("C") ?? "Belirtilmedi")</td>
+                <td>
+                    @if (randevu.Durum == "Bekliyor")
+                    {
+                        <span class="badge bg-warning">@randevu.Durum</span>
+                    }
+                    else if (randevu.Durum == "Onaylandı")
+                    {
+                        <span class="badge bg-success">@randevu.Durum</span>
+                    }
+                   
+                </td>
+                <td>
+                    @if (randevu.Durum == "Bekliyor")
+                    {
+                        <form asp-action="Approve" method="post" style="display:inline;">
+                            <input type="hidden" name="id" value="@randevu.Id" />
+                            <button type="submit" class="btn btn-success btn-sm">Onayla</button>
+                        </form>
+                      
+                    }
+                    <a asp-action="Edit" asp-route-id="@randevu.Id" class="btn btn-warning btn-sm">Düzenle</a>
+                    <a asp-action="Delete" asp-route-id="@randevu.Id" class="btn btn-danger btn-sm">Sil</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

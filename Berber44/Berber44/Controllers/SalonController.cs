@@ -109,23 +109,62 @@ namespace Berber44.Controllers
         }
 
         // POST: Salon/Delete/5
+        // POST: Salon/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            if (_context.Salonlar == null)
+            // İlgili salonu, çalışanlarını ve işlemlerini yükle
+            var salon = await _context.Salonlar
+                                      .Include(s => s.Calisanlar)
+                                      .Include(s => s.Islemler) // Örneğin Islemler tablosu
+                                      .FirstOrDefaultAsync(s => s.Id == id);
+
+            foreach (var calisan in salon.Calisanlar)
             {
-                return Problem("Entity set 'ApplicationDbContext.Salonlar'  is null.");
-            }
-            var salon = await _context.Salonlar.FindAsync(id);
-            if (salon != null)
-            {
-                _context.Salonlar.Remove(salon);
+                if (calisan.Randevular.Any())
+                {
+                    TempData["ErrorMessage"] = "Bu salon silinemez çünkü çalışanlara bağlı randevular var. Lütfen önce randevuları silin.";
+                    return RedirectToAction(nameof(Index));
+                }
             }
 
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            if (salon == null)
+            {
+                TempData["ErrorMessage"] = "Salon bulunamadı.";
+                return RedirectToAction(nameof(Index));
+            }
+
+            // Bağlı çalışanları kontrol et
+            if (salon.Calisanlar.Any())
+            {
+                TempData["ErrorMessage"] = "Bu salon silinemez çünkü ona bağlı çalışanlar var. Lütfen önce çalışanları silin.";
+                return RedirectToAction(nameof(Index));
+            }
+
+            // Bağlı işlemleri kontrol et
+            if (salon.Islemler.Any()) // Eğer `Islemler` adında bir işlem tablonuz varsa
+            {
+                TempData["ErrorMessage"] = "Bu salon silinemez çünkü ona bağlı işlemler var. Lütfen önce işlemleri silin.";
+                return RedirectToAction(nameof(Index));
+            }
+
+            try
+            {
+                // Silme işlemi
+                _context.Salonlar.Remove(salon);
+                await _context.SaveChangesAsync();
+                TempData["SuccessMessage"] = "Salon başarıyla silindi.";
+                return RedirectToAction(nameof(Index));
+            }
+            catch (Exception)
+            {
+                TempData["ErrorMessage"] = "Bir hata oluştu. Lütfen tekrar deneyin.";
+                return RedirectToAction(nameof(Index));
+            }
         }
+
+
 
         // GET: Salon/Details/5
         public async Task<IActionResult> Details(int? id)

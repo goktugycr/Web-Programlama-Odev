@@ -1,0 +1,19 @@
+﻿<div class="container mt-5">
+    <h1 class="mb-4">Kayıt Ol</h1>
+    <form method="post" action="@Url.Action("Register", "Account")">
+        @Html.AntiForgeryToken()
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="Email" placeholder="Email" required />
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" name="Password" placeholder="Password" required />
+        </div>
+        <div class="mb-3">
+            <label for="confirmPassword" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" id="confirmPassword" name="ConfirmPassword" placeholder="Confirm Password" required />
+        </div>
+        <button type="submit" class="btn btn-success">Kayıt Ol</button>
+    </form>
+</div>

@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Erişim Engellendi";
+    var returnUrl = Context.Request.Headers["Referer"].ToString();  // Kullanıcının geldiği sayfayı al
+    var userRole = User.FindFirst(System.Security.Claims.ClaimTypes.Role)?.Value;  // Kullanıcı rolünü al
+
+    if (userRole == "Admin")
+    {
+        returnUrl = "/Admin";
+    }
+    else if (userRole == "User")
+    {
+        returnUrl = "/User/Panel";
+    }
+    else
+    {
+        returnUrl = string.IsNullOrEmpty(returnUrl) ? "/" : returnUrl;  // Eğer yoksa ana sayfaya yönlendir
+    }
+}
+
+<h1 class="text-danger">Erişim Engellendi</h1>
+<p>Bu sayfaya erişim yetkiniz yoktur.</p>
+<p>6 saniye içinde önceki sayfaya yönlendirileceksiniz...</p>
+
+<a href="@returnUrl" class="btn btn-primary">Geri Dön</a>
+
+<script type="text/javascript">
+    setTimeout(function() {
+        window.location.href = '@returnUrl';
+    }, 6000);  // 6 saniye sonra yönlendir
+</script>

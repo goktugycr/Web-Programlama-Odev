@@ -1,0 +1,14 @@
+﻿@{
+    var userEmail = User.Identity?.Name; // Claims tabanlı kullanıcı oturumu kontrolü
+}
+<h2>Kullanıcı Paneli</h2>
+<p>Hoşgeldiniz, @userEmail!</p>
+<p>Bu Sayfada Randevu oluşturabilir, mevcut randevunuzun onay durumlarını takip edebilirsiniz</p>
+
+<div class="d-flex justify-content-start">
+    <!-- Randevularım Butonu -->
+    <a href="@Url.Action("Randevularim", "Randevu")" class="btn btn-outline-primary me-2">Randevularım</a>
+
+    <!-- Yeni Randevu Al Butonu -->
+    <a href="@Url.Action("Create", "Randevu")" class="btn btn-success me-2">Yeni Randevu Al</a>
+</div>

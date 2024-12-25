@@ -37,25 +37,6 @@ namespace Berber44.Controllers
             return View();
         }
 
-        // POST: Islem/Create
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(Islem islem)
-        {
-            // ModelState'in geçerliliğini kontrol et
-            if (ModelState.IsValid)
-            {
-                // Veritabanına ekle ve kaydet
-                _context.Islemler.Add(islem);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-
-            // Eğer doğrulama başarısız olursa tekrar dropdown'ı yükle
-            ViewBag.Salonlar = new SelectList(_context.Salonlar, "Id", "Ad", islem.SalonId);
-            return View(islem);
-        }
-
         // GET: Islem/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -70,7 +51,6 @@ namespace Berber44.Controllers
                 return NotFound();
             }
 
-            // Dropdown için salon listesini yükle
             ViewBag.Salonlar = new SelectList(_context.Salonlar, "Id", "Ad", islem.SalonId);
             return View(islem);
         }
@@ -94,7 +74,7 @@ namespace Berber44.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!IslemExists(islem.Id))
+                    if (!_context.Islemler.Any(e => e.Id == islem.Id))
                     {
                         return NotFound();
                     }
@@ -103,6 +83,25 @@ namespace Berber44.Controllers
                         throw;
                     }
                 }
+                return RedirectToAction(nameof(Index));
+            }
+            ViewBag.Salonlar = new SelectList(_context.Salonlar, "Id", "Ad", islem.SalonId);
+            return View(islem);
+        }
+
+
+
+        // POST: Islem/Create
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create(Islem islem)
+        {
+            // ModelState'in geçerliliğini kontrol et
+            if (ModelState.IsValid)
+            {
+                // Veritabanına ekle ve kaydet
+                _context.Islemler.Add(islem);
+                await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
 
@@ -145,9 +144,5 @@ namespace Berber44.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        private bool IslemExists(int id)
-        {
-            return _context.Islemler.Any(e => e.Id == id);
-        }
     }
 }

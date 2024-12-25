@@ -1,0 +1,38 @@
+﻿@model dynamic
+
+<h1>Login</h1>
+
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger">@TempData["Error"]</div>
+}
+
+@if (ViewBag.ErrorMessage != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.ErrorMessage
+    </div>
+}
+
+<form method="post" asp-controller="Account" asp-action="Login">
+    @Html.AntiForgeryToken()
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" class="form-control" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+</form>
+
+<script type="text/javascript">
+    (function () {
+        // Tarayıcı geri tuşuna basıldığında ana sayfaya yönlendir
+        window.history.pushState(null, null, location.href);
+        window.onpopstate = function () {
+            location.href = '/Home/Index'; // Ana sayfa URL'sine yönlendirme
+        };
+    })();
+</script>

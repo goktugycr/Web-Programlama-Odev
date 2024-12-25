@@ -1,5 +1,12 @@
 ﻿@model IEnumerable<Berber44.Models.Islem>
+<div class="mt-5 text-center">
+    <a href="@Url.Action("Index", "Salon")" class="btn btn-sm btn-primary mx-2">Salon Yönetimi</a>
+    <a href="@Url.Action("Index", "Calisan")" class="btn btn-sm btn-secondary mx-2">Çalışan Yönetimi</a>
+    <a href="@Url.Action("Index", "Randevu")" class="btn btn-sm btn-success mx-2">Randevu Yönetimi</a>
+    <a href="@Url.Action("UserList", "Admin")" class="btn btn-sm btn-warning mx-2">Kullanıcı Yönetimi</a>
+    <a href="@Url.Action("RandevuYonetimi", "Admin")" class="btn btn-sm btn-warning mx-2">Randevu Api Yönetimi</a>
 
+</div>
 <h1>İşlem Listesi</h1>
 
 <p>

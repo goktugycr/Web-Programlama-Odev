@@ -11,7 +11,8 @@ namespace Berber44.Models
         public string Soyad { get; set; } = string.Empty;
         public string UzmanlikAlanlari { get; set; } = string.Empty;
         public int SalonId { get; set; }
-        public Salon? Salon { get; set; }
+        public Salon? Salon { get; set; } 
+        public ICollection<Randevu> Randevular { get; set; } = new List<Randevu>();
     }
 
 }

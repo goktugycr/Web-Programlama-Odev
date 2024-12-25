@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Berber44.Models.Randevu>
+
+<h2>RandevuList</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Çalışan</th>
+            <th>İşlem</th>
+            <th>Tarih ve Saat</th>
+            <th>Ücret</th>
+            <th>Durum</th>
+        </tr>
+    </thead>
+    <tbody><div class="mt-5 text-center">
+        <a href="@Url.Action("Index", "Randevu")" class="btn btn-sm btn-success mx-2">Randevularım</a>
+    </div>
+        @foreach (var randevu in Model)
+        {
+            <tr>
+                <td>@randevu.Id</td>
+                <td>@randevu.Calisan?.Ad</td>
+                <td>@randevu.Islem?.Ad</td>
+                <td>@randevu.TarihSaat.ToString("dd.MM.yyyy HH:mm")</td>
+                <td>@(randevu.Ucret?.ToString("C") ?? "Belirtilmedi")</td>
+                <td>@randevu.Durum</td>
+            </tr>
+        }
+    </tbody>
+</table>

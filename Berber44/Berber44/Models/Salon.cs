@@ -12,7 +12,8 @@ namespace Berber44.Models
 
         // İlişkiler
         public ICollection<Calisan> Calisanlar { get; set; } = new List<Calisan>();
-
+        public ICollection<Islem> Islemler { get; set; } = new List<Islem>();
+       
     }
 }
 

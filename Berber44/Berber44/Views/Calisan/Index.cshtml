@@ -1,5 +1,12 @@
 ﻿@model IEnumerable<Berber44.Models.Calisan>
+<div class="mt-5 text-center">
+    <a href="@Url.Action("Index", "Salon")" class="btn btn-sm btn-primary mx-2">Salon Yönetimi</a>
+    <a href="@Url.Action("Index", "Islem")" class="btn btn-sm btn-info mx-2 text-white">İşlem Yönetimi</a>
+    <a href="@Url.Action("Index", "Randevu")" class="btn btn-sm btn-success mx-2">Randevu Yönetimi</a>
+    <a href="@Url.Action("UserList", "Admin")" class="btn btn-sm btn-warning mx-2">Kullanıcı Yönetimi</a>
+    <a href="@Url.Action("RandevuYonetimi", "Admin")" class="btn btn-sm btn-warning mx-2">Randevu Api Yönetimi</a>
 
+</div>
 @{
     ViewData["Title"] = "Çalışan Listesi";
 }

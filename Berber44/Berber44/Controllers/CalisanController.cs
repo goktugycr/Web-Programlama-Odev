@@ -49,6 +49,12 @@ namespace Berber44.Controllers
         {
             if (ModelState.IsValid)
             {
+                if (calisan.SalonId == 0 || !_context.Salonlar.Any(s => s.Id == calisan.SalonId))
+                {
+                    TempData["ErrorMessage"] = "Çalışanı kaydedebilmek için bir salon seçmeniz gerekiyor.";
+                    return RedirectToAction("Index", "Salon");
+                }
+
                 _context.Calisanlar.Add(calisan);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));

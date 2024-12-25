@@ -1,0 +1,23 @@
+﻿@model Berber44.Models.Randevu
+
+<h2>Randevu Sil</h2>
+
+<div>
+    <h4>Randevuyu silmek istediğinize emin misiniz?</h4>
+    <dl class="row">
+        <dt class="col-sm-2">Çalışan</dt>
+        <dd class="col-sm-10">@Model.Calisan?.Ad</dd>
+
+        <dt class="col-sm-2">İşlem</dt>
+        <dd class="col-sm-10">@Model.Islem?.Ad</dd>
+
+        <dt class="col-sm-2">Tarih ve Saat</dt>
+        <dd class="col-sm-10">@Model.TarihSaat.ToString("dd.MM.yyyy HH:mm")</dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" class="btn btn-danger">Sil</button>
+        <a asp-action="Index" class="btn btn-secondary">İptal</a>
+    </form>
+</div>

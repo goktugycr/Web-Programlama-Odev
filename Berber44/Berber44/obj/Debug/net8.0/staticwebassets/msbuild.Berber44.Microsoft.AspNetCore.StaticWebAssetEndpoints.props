@@ -1,16 +1,16 @@
 ﻿<Project>
   <ItemGroup>
     <StaticWebAssetEndpoint Include="_content/Berber44/Berber44.bundle.scp.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Berber44.oxlr8sq90r.bundle.scp.css'))</AssetFile>
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Berber44.wyn0clocy3.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-NIBBShOmysnDMm3W8PA3fqgMbxaDGFsVFDBzD16T0jY="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1126"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022NIBBShOmysnDMm3W8PA3fqgMbxaDGFsVFDBzD16T0jY=\u0022"},{"Name":"Last-Modified","Value":"Sat, 30 Nov 2024 17:07:58 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-qAbazEHwKFOmNW9ZHnr3NqthfC\u002BCb7XU0brJerIHkHI="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2257"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022qAbazEHwKFOmNW9ZHnr3NqthfC\u002BCb7XU0brJerIHkHI=\u0022"},{"Name":"Last-Modified","Value":"Fri, 06 Dec 2024 20:45:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Berber44/Berber44.oxlr8sq90r.bundle.scp.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Berber44.oxlr8sq90r.bundle.scp.css'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/Berber44/Berber44.wyn0clocy3.bundle.scp.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Berber44.wyn0clocy3.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"oxlr8sq90r"},{"Name":"integrity","Value":"sha256-NIBBShOmysnDMm3W8PA3fqgMbxaDGFsVFDBzD16T0jY="},{"Name":"label","Value":"_content/Berber44/Berber44.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1126"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022NIBBShOmysnDMm3W8PA3fqgMbxaDGFsVFDBzD16T0jY=\u0022"},{"Name":"Last-Modified","Value":"Sat, 30 Nov 2024 17:07:58 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"wyn0clocy3"},{"Name":"integrity","Value":"sha256-qAbazEHwKFOmNW9ZHnr3NqthfC\u002BCb7XU0brJerIHkHI="},{"Name":"label","Value":"_content/Berber44/Berber44.bundle.scp.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2257"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022qAbazEHwKFOmNW9ZHnr3NqthfC\u002BCb7XU0brJerIHkHI=\u0022"},{"Name":"Last-Modified","Value":"Fri, 06 Dec 2024 20:45:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Berber44/css/site.c2tiyv64ts.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
@@ -35,6 +35,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"5430"},{"Name":"Content-Type","Value":"image/x-icon"},{"Name":"ETag","Value":"\u0022Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\u0022"},{"Name":"Last-Modified","Value":"Sat, 30 Nov 2024 16:43:16 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Berber44/images/barber.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\barber.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-9uAY3FQxcBrUPD/Yw08MjQqM5QzJ2bx5o4D7p920dqI="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"56482"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00229uAY3FQxcBrUPD/Yw08MjQqM5QzJ2bx5o4D7p920dqI=\u0022"},{"Name":"Last-Modified","Value":"Tue, 17 Dec 2024 18:01:58 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Berber44/images/barber.y2iahhhw33.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\barber.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"y2iahhhw33"},{"Name":"integrity","Value":"sha256-9uAY3FQxcBrUPD/Yw08MjQqM5QzJ2bx5o4D7p920dqI="},{"Name":"label","Value":"_content/Berber44/images/barber.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"56482"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00229uAY3FQxcBrUPD/Yw08MjQqM5QzJ2bx5o4D7p920dqI=\u0022"},{"Name":"Last-Modified","Value":"Tue, 17 Dec 2024 18:01:58 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Berber44/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>

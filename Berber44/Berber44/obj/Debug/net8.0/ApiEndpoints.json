@@ -1,1 +1,28 @@
-[]
+[
+  {
+    "ContainingType": "Berber44.Controllers.Api.RandevuApiController",
+    "Method": "DeleteRandevu",
+    "RelativePath": "api/RandevuApi/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Berber44.Controllers.Api.RandevuApiController",
+    "Method": "GetAll",
+    "RelativePath": "api/RandevuApi/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

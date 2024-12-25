@@ -1,0 +1,95 @@
+﻿@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<div class="mt-5 text-center">
+    <a href="@Url.Action("Index", "Salon")" class="btn btn-sm btn-primary mx-2">Salon Yönetimi</a>
+    <a href="@Url.Action("Index", "Calisan")" class="btn btn-sm btn-secondary mx-2">Çalışan Yönetimi</a>
+    <a href="@Url.Action("Index", "Islem")" class="btn btn-sm btn-info mx-2 text-white">İşlem Yönetimi</a>
+    <a href="@Url.Action("Index", "Randevu")" class="btn btn-sm btn-success mx-2">Randevu Yönetimi</a>
+    <a href="@Url.Action("UserList", "Admin")" class="btn btn-sm btn-warning mx-2">Kullanıcı Yönetimi</a>
+</div>
+
+<div class="container mt-5">
+    <h1 class="mb-4">Randevu API Yönetimi</h1>
+
+    <!-- API Butonları -->
+    <button id="fetchRandevularBtn" class="btn btn-primary mb-4">Randevuları Getir</button>
+    <button id="deleteRandevuBtn" class="btn btn-danger mb-4">Randevu Sil</button>
+
+    <!-- Tablo -->
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Çalışan</th>
+                <th>İşlem</th>
+                <th>Ücret</th>
+                <th>Kullanıcı Email</th>
+                <th>Tarih</th>
+                <th>Durum</th>
+            </tr>
+        </thead>
+        <tbody id="randevuTableBody">
+            <!-- Randevu verileri burada gösterilecek -->
+        </tbody>
+    </table>
+</div>
+
+<script>
+    // API'den randevuları getir
+    document.getElementById("fetchRandevularBtn").addEventListener("click", function () {
+        fetch("/api/RandevuApi/GetAll")
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("API çağrısı başarısız!");
+                }
+                return response.json();
+            })
+            .then(data => {
+                const tableBody = document.getElementById("randevuTableBody");
+                tableBody.innerHTML = "";
+                data.forEach(randevu => {
+                    const row = `
+                            <tr>
+                                <td>${randevu.id}</td>
+                                <td>${randevu.calisanAdSoyad || "Atanmamış"}</td>
+                                <td>${randevu.islemAd || "Atanmamış"}</td>
+                                <td>${randevu.islemUcret ? randevu.islemUcret.toFixed(2) + "₺" : "0₺"}</td>
+                                <td>${randevu.kullaniciEmail}</td>
+                                <td>${new Date(randevu.tarihSaat).toLocaleString()}</td>
+                                <td>${randevu.durum}</td>
+                            </tr>
+                        `;
+                    tableBody.innerHTML += row;
+                });
+            })
+            .catch(error => {
+                console.error("Hata:", error);
+                alert("Randevular yüklenirken bir hata oluştu!");
+            });
+    });
+
+    // Randevu sil
+    document.getElementById("deleteRandevuBtn").addEventListener("click", function () {
+        const randevuId = prompt("Silinecek randevu ID'sini girin:");
+
+        fetch(`/api/RandevuApi/${randevuId}`, {
+            method: "DELETE"
+        })
+        .then(response => {
+            if (response.ok) {
+                alert("Randevu silindi!");
+                fetchRandevular();
+            }
+        })
+        .catch(error => {
+            console.error("Silme hatası:", error);
+            alert("Randevu silinirken hata oluştu!");
+        });
+    });
+
+    // Listeyi yenileme fonksiyonu
+    function fetchRandevular() {
+        document.getElementById("fetchRandevularBtn").click();
+    }
+</script>

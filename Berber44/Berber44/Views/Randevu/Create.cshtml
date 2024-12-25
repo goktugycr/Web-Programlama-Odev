@@ -1,0 +1,36 @@
+﻿@model Berber44.Models.Randevu
+
+
+<h1>Yeni Randevu Ekle</h1>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label for="CalisanId">Çalışan</label>
+        <select asp-for="CalisanId" class="form-control" asp-items="ViewBag.Calisanlar"></select>
+    </div>
+
+    <div class="form-group">
+        <label for="IslemId">İşlem</label>
+        <select asp-for="IslemId" class="form-control" asp-items="ViewBag.Islemler"></select>
+    </div>
+
+      
+    <div class="form-group">
+        <label for="TarihSaat">Tarih ve Saat</label>
+        <input asp-for="TarihSaat" type="datetime-local" class="form-control"
+               min="@DateTime.Now.ToString("yyyy-MM-ddTHH:mm")" />
+        <span asp-validation-for="TarihSaat" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="Durum">Durum</label>
+        <select asp-for="Durum" class="form-control">
+            <option value="Bekliyor">Bekliyor</option>
+           
+        </select>
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+</form>
+
